@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signupLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/loginPadding"
+    tools:context=".Signup">
+
+    <LinearLayout
+        android:id="@+id/formDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/signupTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signupTitle"
+            android:textSize="@dimen/signupTitleSize"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:layout_marginBottom="@dimen/normal_topMargin"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/userName"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/normal_topMargin"/>
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/mobile"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_marginTop="@dimen/normal_topMargin"/>
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:hint="@string/username"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/normal_topMargin"/>
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/normal_topMargin"/>
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:hint="@string/confirmPassword"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/normal_topMargin"/>
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:background="@drawable/rounded_btn"
+            style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_marginTop="@dimen/normal_topMargin"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

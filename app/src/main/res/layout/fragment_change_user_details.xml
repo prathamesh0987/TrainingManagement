@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding10"
+    android:id="@+id/changeUserDetailsLayout"
+    tools:context=".ChangeUserDetails">
+
+    <TextView
+        android:id="@+id/currentUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/likeSize"/>
+
+    <TextView
+        android:id="@+id/currentUserContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/likeSize"/>
+
+    <TextView
+        android:id="@+id/currentUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/likeSize"/>
+
+    <LinearLayout
+        android:id="@+id/currentUserStatusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/currentUserStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status"
+            android:textSize="@dimen/likeSize"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/currentUserCoursesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/currentUserCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courses"
+            android:textSize="@dimen/likeSize"/>
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/updateUserDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:text="@string/update"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/padding10"/>
+
+
+</LinearLayout>

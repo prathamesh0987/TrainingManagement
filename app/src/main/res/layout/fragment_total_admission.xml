@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/totalAdmissions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TotalAdmission">
+
+    <TextView
+        android:id="@+id/subjectTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/subjectTitle"
+        android:textSize="@dimen/titleSize"
+        android:layout_marginBottom="@dimen/subjectTitleMargin"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/allSubjects"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/subjectTitle"/>
+
+</RelativeLayout>

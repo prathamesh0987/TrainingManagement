@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "424869972511",
+    "firebase_url": "https://fir-blaze-a2ec1.firebaseio.com",
+    "project_id": "fir-blaze-a2ec1",
+    "storage_bucket": "fir-blaze-a2ec1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424869972511:android:07baedb174ea90a8",
+        "android_client_info": {
+          "package_name": "com.svrinfoteh.trainingmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424869972511-r31lcic8fb7kpff5o34qs13vopdth13k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.svrinfoteh.trainingmanagement",
+            "certificate_hash": "e641fe3caec5822eb7fbf4c81945e7bb8630c4a7"
+          }
+        },
+        {
+          "client_id": "424869972511-i90iir17021otof7226v1melbovtim4l.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "424869972511-i90iir17021otof7226v1melbovtim4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3eSX8et9iYC1J6Y2ODzr3Uoo1-V6eC7k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424869972511-i90iir17021otof7226v1melbovtim4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admissionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".Admission">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="11">
+
+            <TextView
+                android:id="@+id/admission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/admissionForm"
+                android:textSize="17sp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif"
+                android:layout_weight="1"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/studentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:hint="@string/stud_name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/dateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/dob"
+                android:inputType="date"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:id="@+id/contactNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/contact"
+                android:inputType="phone"
+                android:maxLength="10"/>
+
+            <LinearLayout
+                android:id="@+id/genderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender"
+                    android:textSize="12sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"/>
+
+
+                <RadioGroup
+                    android:id="@+id/genderValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male"
+                        android:textSize="12sp"
+                        />
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"
+                        android:textSize="12sp"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/qualificationDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/qualification"
+                android:inputType="text" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/courses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/joiningFor"/>
+
+            <EditText
+                android:id="@+id/courseFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/fee"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/duration"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/dateOfJoining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/doj"
+                android:inputType="date"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_btn"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                android:text="@string/save" />
+
+        </LinearLayout>
+
+</RelativeLayout>

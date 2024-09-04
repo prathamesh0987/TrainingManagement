@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/setStatus"
+        android:title="@string/setStatus"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/setSyllabus"
+        android:title="@string/setSyllabus"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/uploadProgressReport"
+        android:title="@string/uploadProgressData"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/downloadProgressReport"
+        android:title="@string/downloadFile"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/feeStatus"
+        android:title="@string/feeStatus"
+        app:showAsAction="never"/>
+
+</menu>

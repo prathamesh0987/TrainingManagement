@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/padding10"
+    tools:context=".DisplaySyllabusProgress">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:maxLines="10"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/syllabusCovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:maxLines="10"
+        android:scrollbars="vertical|horizontal"/>
+
+    <TextView
+        android:id="@+id/revision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/syllabusCovered"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:scrollbars="vertical|horizontal"/>
+
+    <RadioGroup
+        android:id="@+id/studEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:weightSum="2">
+
+        <RadioButton
+            android:id="@+id/employee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/employee"/>
+
+        <RadioButton
+            android:id="@+id/student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/student"/>
+
+    </RadioGroup>
+
+
+    <io.netopen.hotbitmapgg.library.view.RingProgressBar
+        android:id="@+id/percentCovered"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+
+        app:max="100"
+        app:ringColor="@color/gray"
+        app:ringProgressColor="@color/black"
+        app:textColor="@color/black"
+        app:textIsShow="true"
+        app:textSize="14sp"
+        app:ringWidth="2dp"
+        app:style="STROKE"/>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/feeLayout"
+    android:orientation="vertical"
+    android:padding="@dimen/padding10"
+    android:weightSum="6"
+    tools:context=".ManageFee">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/descriptionSize"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/totalFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/feePaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/feeRemaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/paymentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/nowPaying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nowPaying"/>
+
+        <EditText
+            android:id="@+id/payingAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/updateFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_btn"
+        android:layout_weight="1"/>
+
+
+
+
+
+
+</LinearLayout>

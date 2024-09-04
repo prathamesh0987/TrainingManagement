@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/uploadLayout"
+    tools:context=".EventPost">
+
+    <ImageButton
+        android:id="@+id/uploadMedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:background="@color/transparent_white"
+        android:contentDescription="@string/description"
+        android:src="@mipmap/add_btn"/>
+
+    <EditText
+        android:id="@+id/eventTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/title"
+        android:padding="10dp"
+        android:layout_below="@id/uploadMedia"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:layout_below="@id/eventTitle"/>
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_btn"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:text="@string/post"
+        android:layout_below="@id/desc"/>
+
+</RelativeLayout>

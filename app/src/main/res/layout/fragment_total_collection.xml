@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/collectionLayout"
+    tools:context=".TotalCollection">
+
+    <TableLayout
+        android:id="@+id/collectionTableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:id="@+id/titleRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/faculty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/descriptionSize"
+                android:text="@string/faculty"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/totalFee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/descriptionSize"
+                android:text="@string/totalFee"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/feeCollected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/descriptionSize"
+                android:text="@string/feeCollected"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/totalDue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/descriptionSize"
+                android:text="@string/due"
+                android:layout_gravity="center"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</RelativeLayout>

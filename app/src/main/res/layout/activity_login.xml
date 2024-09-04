@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/loginPadding"
+    android:id="@+id/frameLayout"
+    android:background="@drawable/login_background"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textSize="@dimen/loginTitleSize"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="@dimen/loginTitleTopMargin"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/loginTitle"
+        android:layout_marginTop="40dp"
+        android:weightSum="4">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_perm_identity_black_18dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@mipmap/ic_perm_identity_black_18dp"
+            android:ems="20"
+            android:hint="@string/username"
+            android:inputType="textEmailAddress"/>
+
+        <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:drawable_hide="@mipmap/ic_visibility_off_black_18dp"
+            app:drawable_show="@drawable/visibility_black_18dp"/>
+
+        <Button
+            android:id="@+id/login"
+            style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_btn"
+            android:text="@string/login"
+            android:textColorLink="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_btn"
+            android:text="@string/signup"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/loginLayout"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:text="@string/forgotPassword"
+        android:textColor="@android:color/holo_red_dark" />
+
+</RelativeLayout>
